@@ -12,7 +12,6 @@ exports.register = (req, res) => {
             return res.status(400).json({ message: "Email already exists" });
         }
         const newUser = new User(req.body);
-        console.log('UserId', newUser._id);
         const newProfile = new Profile({ user: newUser._id });
         // Hash password before saving in database
         bcrypt.genSalt(10, (err, salt) => {
