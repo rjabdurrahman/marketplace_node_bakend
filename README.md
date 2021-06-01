@@ -1,4 +1,7 @@
-***RUN DEVELOPMENT MODE***
+RUN DEVELOPMENT MODE
+===
 ```npm run dev```
-***RUN TEST***
+
+RUN TEST
+===
 ```npm run test```
