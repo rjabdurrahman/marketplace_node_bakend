@@ -1,9 +1,10 @@
-name: GitHub Actions Demo
+name: Digital Ocean Depoyment
 on: [push]
 jobs:
   Deployment:
     runs-on: ubuntu-latest
     steps:
+      - name: Deployment
         uses: actions/checkout@v2
       - name: List files in the repository
         run: |
